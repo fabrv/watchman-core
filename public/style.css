@@ -1,8 +1,7 @@
 :root {
   --bs-dark: #343a40;
-  --bs-primary: #81B622;
-  --bs-primary-dark: #3D550C;
-  --bs-primary-opaque: rgba(130, 182, 34, 0.6);
+  --bs-primary: #2065cc;
+  --bs-primary-opaque: rgba(13, 109, 253, 0.6);
   --bs-success-opaque: rgba(14, 152, 14, 0.6);
   --bs-warning-opaque: rgba(255, 255, 0, 0.6);
   --bs-danger-opaque: rgba(255, 0, 0, 0.6);
@@ -13,32 +12,9 @@
   border-color: var(--bs-primary);
 }
 
-.btn-primary:hover {
-  background-color: var(--bs-primary-dark);
-  border-color: var(--bs-primary-dark);
-}
-
-.btn-primary:active, .btn-primary:focus {
-  background-color: var(--bs-primary-opaque);
-  border-color: var(--bs-primary-opaque);
-}
-
-.btn-check:focus + .btn, .btn:focus {
-  box-shadow: none;
-}
-
-.btn-check:active + .btn-primary:focus, .btn-check:checked + .btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 .25rem var(--bs-primary-opaque);
-}
-
 body {
   font-size: 1rem;
   font-weight: normal;
-  padding: 5px;
-
-  font-family: 'KumbhSans', Arial, sans-serif;
-  font-size: 0.9rem;
-  background-color: var(--bs-light);
 }
 
 .feather {
@@ -114,11 +90,17 @@ body {
   text-transform: uppercase;
 }
 
+.sidebar {
+  background-color: var(--bs-dark);
+}
+
 .collapsible-sidebar .sidebar-toggler {
   display: none;
 }
 
 .sidebar-toggler {
+  color: var(--bs-light);
+  background-color: var(--bs-dark);
   outline: none;
   border: none;
   position: absolute;
@@ -213,6 +195,12 @@ h1, h2, h3 {
   font-weight: 900;
 }
 
+body {
+  font-family: 'KumbhSans', Arial, sans-serif;
+  background-color: #21252B;
+  font-size: 0.9rem;
+}
+
 select, input, .form-control {
   border: none !important;
   font-size: 0.9rem;
@@ -250,7 +238,7 @@ select, input, .form-control {
 }
 
 .btn, select, input[type=text], .form-control {
-  border-radius: 0.5rem !important;
+  border-radius: 8px !important;
 }
 
 .input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
@@ -459,7 +447,7 @@ img {
   font-weight: 600;
   line-height: 1;
   padding: 7px;
-  margin-left: 0.25rem;
+  margin-right: 0.25rem;
   color: var(--bs-light);
   opacity: 0.8;
   font-size: .7rem;

@@ -1,0 +1,25 @@
+.filter-tag {
+  display: inline-block;
+  background-color: var(--bs-primary);
+  color: var(--bs-light);
+  margin: 0 0.2rem 0.1rem 0;
+}
+
+.input-group-text {
+  background-color: #FFF;
+  border-right: none;
+  font-size: 0.9rem;
+}
+
+.filter-select input[type=checkbox] {
+  border: 1px solid #ced4da !important;
+}
+
+.list-group-item {
+  border: none;
+  background-color: transparent;
+}
+
+.selected-list {
+  border-bottom: 1px solid rgba(0,0,0,.125);;
+}
