@@ -6,6 +6,7 @@
   --bs-success-opaque: rgba(14, 152, 14, 0.6);
   --bs-warning-opaque: rgba(255, 255, 0, 0.6);
   --bs-danger-opaque: rgba(255, 0, 0, 0.6);
+  --bs-blue-opaque: rgba(13, 109, 253, 0.6);
 }
 
 .btn-primary {
@@ -39,6 +40,28 @@ body {
   font-family: 'KumbhSans', Arial, sans-serif;
   font-size: 0.9rem;
   background-color: var(--bs-light);
+}
+
+.page-item.active .page-link {
+  background-color: var(--bs-primary);
+}
+
+.pagination-sm .page-item:first-child .page-link {
+  border-top-left-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+}
+
+.pagination-sm .page-item:last-child .page-link {
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+
+.page-link {
+  color: var(--bs-primary-dark);
+}
+
+.page-link:hover {
+  color: var(--bs-primary);
 }
 
 .feather {
