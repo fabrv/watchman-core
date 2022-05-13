@@ -16,7 +16,7 @@ export interface TopBarProps {
 
 export const TopBar = ({ brand, showNav = true, links, variant = 'light' }: TopBarProps) => {
   return (
-    <Navbar variant={variant}>
+    <Navbar variant={variant} style={{ backgroundColor: variant === 'light' ? 'var(--bs-light)' : 'var(--bs-dark)' }}>
       <Container fluid={true} className='no-gutter'>
         <Col md={2}>
           <Navbar.Brand>{brand}</Navbar.Brand>

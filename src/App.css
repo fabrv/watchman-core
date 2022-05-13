@@ -74,6 +74,10 @@ body {
  * Sidebar
  */
 
+.sidebar {
+  background-color: var(--bs-dark);
+}
+
 .sidebar-sticky {
   position: relative;
   top: 0;
