@@ -1,16 +1,20 @@
 {
-  "name": "@watchman/core",
+  "name": "watchman-core",
   "description": "A library of reusable components for Watchman Timetracker",
   "author": {
     "name": "Fabrizio Delcompare",
     "email": "frivera@nevicad.com"
   },
   "license": "MIT",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "files": [
     "dist"
   ],
   "main": "dist/index.js",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
