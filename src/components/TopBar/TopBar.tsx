@@ -1,11 +1,9 @@
-import { ReactNode } from 'react'
 import { Col, Container, Nav, Navbar } from 'react-bootstrap'
 import { IconType } from 'react-icons/lib'
 
 export interface TopBarProps {
   brand: string
   showNav?: boolean,
-  children: ReactNode,
   variant?: 'dark' | 'light'
   links?: {
     title: string,
