@@ -12,7 +12,7 @@ export interface TopBarProps {
   }[]
 }
 
-export const TopBar = ({ brand, showNav = true, links, variant = 'dark' }: TopBarProps) => {
+export const TopBar = ({ brand, showNav = true, links, variant = 'light' }: TopBarProps) => {
   return (
     <Navbar variant={variant} style={{ backgroundColor: variant === 'light' ? 'var(--bs-light)' : 'var(--bs-dark)' }}>
       <Container fluid={true} className='no-gutter'>
