@@ -46,5 +46,5 @@ Dark.args = {
       href: '#'
     }
   ],
-  variant: 'dark'
+  variant: 'light'
 }
