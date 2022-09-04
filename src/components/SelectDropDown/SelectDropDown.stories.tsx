@@ -32,7 +32,8 @@ Text.args = {
     { id: 8, value: 'Youtube' },
     { id: 9, value: 'Linkedin' },
     { id: 10, value: 'Instagram' }
-  ]
+  ],
+  onChange: (selectedValues) => console.log(selectedValues)
 }
 
 export const OnlyIcon = Template.bind({})
@@ -54,7 +55,8 @@ OnlyIcon.args = {
     { id: 8, value: 'Youtube' },
     { id: 9, value: 'Linkedin' },
     { id: 10, value: 'Instagram' }
-  ]
+  ],
+  onChange: (selectedValues) => console.log(selectedValues)
 }
 
 export const TextAndIcon = Template.bind({})
@@ -76,5 +78,6 @@ TextAndIcon.args = {
     { id: 8, value: 'Youtube' },
     { id: 9, value: 'Linkedin' },
     { id: 10, value: 'Instagram' }
-  ]
+  ],
+  onChange: (selectedValues) => console.log(selectedValues)
 }
