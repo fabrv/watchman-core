@@ -40,6 +40,7 @@ export const SelectDropDown = (
 
   useEffect(() => {
     setDataState(data)
+    console.log('data', data)
   }, [data])
 
   useEffect(() => {
