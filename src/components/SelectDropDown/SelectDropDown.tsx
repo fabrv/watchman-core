@@ -40,7 +40,12 @@ export const SelectDropDown = (
 
   useEffect(() => {
     setDataState(data)
-    console.log('data', data)
+    setFilteredData(
+      data.filter(option => (
+        option.value.toLowerCase().includes(searchValueState.toLowerCase()) &&
+        !selectedValuesState.find(selectedOption => selectedOption.value === option.value)
+      ))
+    )
   }, [data])
 
   useEffect(() => {
