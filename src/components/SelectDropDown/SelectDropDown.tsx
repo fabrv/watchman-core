@@ -36,10 +36,15 @@ export const SelectDropDown = (
   const [selectedValuesState, setSelectedValuesState] = useState(selectedValues || [])
   const [searchValueState, setSearchValueState] = useState(searchValue)
   const [filteredData, setFilteredData] = useState<Option[]>(data)
+  const [dataState, setDataState] = useState<Option[]>(data)
+
+  useEffect(() => {
+    setDataState(data)
+  }, [data])
 
   useEffect(() => {
     setFilteredData(
-      data.filter(option => (
+      dataState.filter(option => (
         option.value.toLowerCase().includes(searchValueState.toLowerCase()) &&
         !selectedValuesState.find(selectedOption => selectedOption.value === option.value)
       ))
@@ -88,7 +93,7 @@ export const SelectDropDown = (
             checked={filteredData.length === 0}
             onChange={(e) => {
               if (e.target.checked) {
-                setSelectedValuesState(data)
+                setSelectedValuesState(dataState)
               } else {
                 setSelectedValuesState([])
               }
