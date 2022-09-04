@@ -96,7 +96,7 @@ export const SelectDropDown = (
         <ListGroup.Item>
           <Form.Check
             label={ labels.all }
-            checked={filteredData.length === 0}
+            checked={selectedValuesState.length === dataState.length}
             onChange={(e) => {
               if (e.target.checked) {
                 setSelectedValuesState(dataState)
